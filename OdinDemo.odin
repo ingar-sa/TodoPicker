@@ -525,7 +525,7 @@ explicit_procedure_overloading :: proc() {
 }
 
 struct_type :: proc() {
-	fmt.println("\n# stTodoruct type")
+	fmt.println("\n# struct type")
 	// A struct is a record type in Odin. It is a collection of fields.
 	// Struct fields are accessed by using a dot:
 	{

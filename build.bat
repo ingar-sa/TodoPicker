@@ -6,7 +6,7 @@ set SCRIPT_DIR=%~dp0
 cd /D %SCRIPT_DIR%
 IF NOT EXIST build mkdir build
 
-odin build src/ -out:build/TodoPicker.exe
+odin run src/ -out:build/TodoPicker.exe -- path ./build/lists/scn.txt 
 
 cd /D %ORIGINAL_DIR%
 endlocal

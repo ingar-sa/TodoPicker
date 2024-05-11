@@ -4,7 +4,8 @@ setlocal
 IF NOT EXIST build mkdir build
 
 cd build
-TodoPicker.exe
+REM TodoPicker.exe
+TodoPicker.exe scn.txt
 
 endlocal
 exit
