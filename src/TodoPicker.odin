@@ -12,22 +12,18 @@ main :: proc() {
 	}
 
 	if (len(os.args) == 2 && os.args[1] == "help") {
-
 		fmt.println("Use: TodoPicker name/path list name/path to list file")
 		fmt.println("Help: TodoPicker help")
 		return
-
 	}
 
 	FilePath: string
 	if (len(os.args) == 3) {
 
 		if (os.args[1] == "name") {
-
 			List := os.args[1]
 			Temp := []string{"lists/", List, ".txt"}
 			FilePath := strings.concatenate(Temp[:])
-
 		} else if (os.args[1] == "path") {
 			FilePath = os.args[2]
 		} else {
